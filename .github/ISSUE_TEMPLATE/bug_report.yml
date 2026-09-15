@@ -1,0 +1,66 @@
+name: Bug Report
+description: Report a problem with XORTO Audio Enhancer
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve XORTO Audio Enhancer.
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+      placeholder: "Example: Chrome 151"
+    validations:
+      required: true
+
+  - type: input
+    id: xorto-version
+    attributes:
+      label: XORTO version
+      placeholder: "Example: 2.6.9"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the problem you experienced.
+      placeholder: Tell us what went wrong.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Tell us how we can reproduce the issue.
+      placeholder: |
+        1. Open YouTube
+        2. Enable...
+        3. Change...
+        4. Problem occurs
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      placeholder: What did you expect to happen?
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional information
+      description: Screenshots, error messages, or other useful details.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I checked that a similar issue has not already been reported.
+          required: true

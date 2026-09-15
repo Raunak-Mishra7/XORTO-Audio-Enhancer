@@ -1,0 +1,39 @@
+name: Feature Request
+description: Suggest a new feature or improvement for XORTO
+title: "[Feature] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an improvement for XORTO Audio Enhancer.
+
+  - type: textarea
+    id: feature
+    attributes:
+      label: Feature idea
+      description: What would you like XORTO to add or improve?
+      placeholder: Describe your idea.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why would this be useful?
+      description: Explain how this feature would improve XORTO.
+    validations:
+      required: true
+
+  - type: textarea
+    id: example
+    attributes:
+      label: Additional details
+      description: Add examples, screenshots, or anything else that explains your idea.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I checked that a similar feature has not already been requested.
+          required: true
